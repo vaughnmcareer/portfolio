@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vaughn Malone | Marketing Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+    :root{
+        --primary:#1e3a8a;
+        --accent:#3b82f6;
+        --text:#1f2937;
+        --bg:#ffffff;
+        --light:#f3f4f6;
+    }
+    *{box-sizing:border-box;margin:0;padding:0;font-family:'Inter',sans-serif;color:var(--text);}    
+    body{background:var(--bg);line-height:1.6;}
+    header{position:fixed;top:0;left:0;width:100%;background:var(--bg);box-shadow:0 2px 4px rgba(0,0,0,.05);z-index:999;}
+    .container{width:90%;max-width:1100px;margin:0 auto;padding:1rem 0;}
+    nav ul{list-style:none;display:flex;gap:1.5rem;justify-content:flex-end;}
+    nav a{text-decoration:none;font-weight:600;}
+    nav a:hover{color:var(--accent);}
+    section{padding:6rem 0 4rem;}
+    #hero{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;min-height:90vh;}
+    #hero h1{font-size:2.75rem;font-weight:700;color:var(--primary);}
+    #hero p{max-width:600px;margin-top:1rem;font-size:1.125rem;}
+    .btn{display:inline-block;background:var(--accent);color:#fff;padding:.75rem 1.5rem;border-radius:.5rem;font-weight:600;margin-top:2rem;text-decoration:none;}
+    .btn:hover{opacity:.9;}
+    #about .content, #experience .content{max-width:800px;margin:0 auto;}
+    #experience .timeline{margin-top:2rem;}
+    .job{margin-bottom:2rem;}
+    .job h3{font-size:1.25rem;font-weight:600;}
+    .job span{display:block;font-size:.9rem;color:#6b7280;margin-bottom:.5rem;}
+    #skills ul{display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;margin-top:2rem;}
+    #skills li{background:var(--light);padding:.5rem 1rem;border-radius:.25rem;font-weight:600;}
+    #portfolio .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem;margin-top:2rem;}
+    #portfolio img{width:100%;display:block;border-radius:.5rem;box-shadow:0 2px 6px rgba(0,0,0,.15);}
+    #contact .contact-card{background:var(--light);padding:2rem;border-radius:.5rem;text-align:center;max-width:500px;margin:2rem auto 0;}
+    footer{background:var(--primary);color:#fff;text-align:center;padding:1rem 0;}
+    @media(max-width:768px){nav ul{justify-content:center;}#hero h1{font-size:2rem;}}
+</style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section id="hero">
+    <h1>Vaughn Malone</h1>
+    <p>Growth minded marketing professional who turns data into actionable insights that drive revenue and impact.</p>
+    <a href="#contact" class="btn">Let’s Connect</a>
+</section>
+
+<section id="about">
+    <div class="container content">
+        <h2>About Me</h2>
+        <p>I specialize in performance marketing for nonprofits and small businesses, blending creative storytelling with rigorous analytics. My goal is to help mission driven teams scale awareness and donations with smart campaigns that respect lean budgets.</p>
+    </div>
+</section>
+
+<section id="experience">
+    <div class="container content">
+        <h2>Experience</h2>
+        <div class="timeline">
+            <div class="job">
+                <h3>Digital Marketing Associate · JobPrepped</h3>
+                <span>January 2025 – Present</span>
+                <p>Lead brand awareness and paid media campaigns, optimize email automation flows, and report on performance across PPC, SEO, and social channels.</p>
+            </div>
+            <div class="job">
+                <h3>Site Coordinator · Boys &amp; Girls Club of Manhattan</h3>
+                <span>September 2024 – January 2025</span>
+                <p>Managed program logistics for more than sixty youth, coordinated staff schedules, and improved parent communication processes.</p>
+            </div>
+            <div class="job">
+                <h3>Marketing Intern · Boys &amp; Girls Club of Manhattan</h3>
+                <span>May 2024 – July 2024</span>
+                <p>Created a photo library and designed social visuals that boosted event engagement.</p>
+            </div>
+            <div class="job">
+                <h3>Marketing Intern · SEG Media</h3>
+                <span>July 2023 – May 2024</span>
+                <p>Edited video assets and wrote blog content that increased average session duration by twenty two percent.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="skills">
+    <div class="container">
+        <h2 style="text-align:center;">Skills</h2>
+        <ul>
+            <li>Google Analytics 4</li>
+            <li>SQL</li>
+            <li>PPC and Paid Social</li>
+            <li>Email Automation</li>
+            <li>Content Strategy</li>
+            <li>Funnel Optimization</li>
+            <li>A B Testing</li>
+            <li>Data Visualization</li>
+        </ul>
+    </div>
+</section>
+
+<section id="portfolio">
+    <div class="container">
+        <h2 style="text-align:center;">Selected Work</h2>
+        <div class="grid">
+            <img src="1.png" alt="Project image">
+            <img src="2.png" alt="Project image">
+            <img src="3.png" alt="Project image">
+            <img src="4.png" alt="Project image">
+            <img src="5.png" alt="Project image">
+            <img src="6.png" alt="Project image">
+            <img src="7.png" alt="Project image">
+            <img src="8.png" alt="Project image">
+            <img src="9.png" alt="Project image">
+            <img src="10.png" alt="Project image">
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container">
+        <h2 style="text-align:center;">Get in Touch</h2>
+        <div class="contact-card">
+            <p>Email: <a href="mailto:vaughn@example.com">vaughn@example.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Vaughn Malone. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
